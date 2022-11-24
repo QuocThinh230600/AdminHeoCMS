@@ -58,9 +58,6 @@
     overflow: auto;
 }
 
-.sidebar .nav_links{
-    overflow: visible;
-}
 
 .sidebar .nav_links::-webkit-scrollbar{
     display: none;
@@ -164,7 +161,6 @@
     opacity: 1;
     pointer-events: auto;
     transition: all 0.4s ease;
-
 }
 
 .sidebar .nav_links li .sub_menu .link_name{
@@ -254,10 +250,11 @@
 .home-section{
     position: relative;
     background: #e4e9f7;
-    height: 100vh;
+    height: 100%;
     left: 260px;
     width: calc(100% - 260px);
     transition: all 0.5s ease;
+    padding: 0 0 30px 0; 
 }
 
 .home-section .home-content .home-content-top{
@@ -293,30 +290,54 @@
 }
 
 /* table css */
+.table-content{
+    min-width:100%;
+    overflow: auto;
+}
 
-.home-content-table {
+
+.table {
     border-collapse: collapse;
     width: 100%;
     /* margin: 50px auto; */
     padding: 1rem;
     background: #fff;
+    border-collapse:collapse;
+    width:100%;
 }
   
-.home-content-table td, .home-content-table th {
+.table td, .table th {
     border: 1px solid #ddd;
     padding: 8px;
     font-size: 16px;
 }
 
+.table th{
+    cursor: pointer;
+}
+
+.table .th-sort-asc::after{
+    content: "\25b4";
+}
+
+.table .th-sort-desc::after{
+    content: "\25be";
+}
+
+.table .th-sort-desc::after, .table .th-sort-asc::after{
+    margin-left: 5px;
+}
+
+
 .td-button-center{
     text-align: center;
 }
   
-.home-content-table tr:nth-child(even){background-color: #f2f2f2;}
+/* .table tr:nth-child(even){background-color: #f2f2f2;} */
   
-.home-content-table tr:hover {background-color: #ddd;}
+.table tr:hover {background-color: #ddd;}
   
-.home-content-table th {
+.table th {
     padding-top: 12px;
     padding-bottom: 12px;
     font-size: 16px;
@@ -325,7 +346,7 @@
     color: white;
     text-align: center;
 }
-.home-content-table tr td button{
+.table tr td button{
     text-align: center;
 }
 
