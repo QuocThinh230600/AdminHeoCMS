@@ -260,7 +260,7 @@
     transition: all 0.5s ease;
 }
 
-.home-section .home-content{
+.home-section .home-content .home-content-top{
     height: 60px;
     display: flex;
     align-items: center;
@@ -285,3 +285,107 @@
     left: 78px;
     width: calc(100% - 78px);
 }
+
+.home-section .home-content .home-content-center{
+    margin: 0 20px;
+    /* cursor: pointer; */
+    height: 100%;
+}
+
+/* table css */
+
+.home-content-table {
+    border-collapse: collapse;
+    width: 100%;
+    /* margin: 50px auto; */
+    padding: 1rem;
+    background: #fff;
+}
+  
+.home-content-table td, .home-content-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.td-button-center{
+    text-align: center;
+}
+  
+.home-content-table tr:nth-child(even){background-color: #f2f2f2;}
+  
+.home-content-table tr:hover {background-color: #ddd;}
+  
+.home-content-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+}
+.home-content-table tr td button{
+    text-align: center;
+}
+
+button.button-table-edit{
+    background: #04AA6D;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 6px;
+    border: #04AA6D 1px solid;
+    cursor: pointer;
+
+}
+
+button.button-table-edit:hover{
+    background-color: #2b522c;
+    border: #2b522c 1px solid;
+}
+
+
+button.button-table-delete{
+    background: #dc3545;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 6px;
+    border: #dc3545 1px solid;
+    cursor: pointer;
+}
+
+button.button-table-delete:hover{
+    background-color: #752931;
+    border: #752931 1px solid;
+}
+
+.button-add button{
+    background: #04AA6D;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 6px;
+    border: #04AA6D 1px solid;    
+    cursor: pointer;
+}
+
+.button-add button i{
+    padding-right: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.button-add button:hover{
+    background-color: #2b522c;
+    border: #2b522c 1px solid;
+}
+
+.button-add{
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+
+
