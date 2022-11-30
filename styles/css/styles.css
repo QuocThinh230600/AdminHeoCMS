@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 220px;
+    background: #25aff3;
+    z-index: 999;
+    transition: all 0.5s ease;
+}
+
+.container .sidebar.close{
+    width: 78px;
+}
+
+.container .sidebar .logo_detail{
+    height: 60px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+} 
+
+.container .sidebar .logo_detail i{
+    font-size: 36px;
+    color: #fff;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.container .sidebar .logo_detail .logo_name{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container .sidebar.close .logo_detail .logo_name{
+    display: none;
+}
+
+.container .sidebar .nav_link{
+    height: 100%;
+    padding: 30px 0 150px 0;
+    overflow: auto;
+}
+
+.container .sidebar .nav_link::-webkit-scrollbar{
+    display: none;
+}
+
+.container .sidebar .nav_link li .icon_link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .sidebar .nav_link .item_link:hover{
+    background: #fff;
+    border-radius: 8px 0 0 8px;
+    transition: all 0.3s ease;
+}
+
+.container .sidebar .nav_link .item_link:hover .link_name, .container .sidebar .nav_link .item_link:hover i{
+    color: #11101d;
+    padding: 4px 0 4px 4px;
+}
+
+.container .sidebar .nav_link .item_link.active{
+    color: #11101d;
+    background: #fff;
+    border-radius: 8px 0 0 8px;
+   
+}
+
+.container .sidebar .nav_link .item_link.active .link_name, .container .sidebar .nav_link .item_link.active i{
+    color: #11101d;
+    padding: 4px 0 4px 4px;
+}
+
+.container .sidebar .nav_link li{
+    position: relative;
+    list-style: none;
+}
+
+.container .sidebar .nav_link li i{
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .sidebar .nav_link li.show_menu i.arrow{
+    transform: rotate(-180deg);
+}
+
+.container .sidebar .nav_link li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container .sidebar .nav_link li a .link_name{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+.container .sidebar .nav_link li .sub_menu{
+    padding: 8px 8px 16px 80px;
+    margin-top: -8px;
+    background: #1d8ac0;
+    display: none;
+}
+
+.container .sidebar .nav_link li.show_menu .sub_menu{
+    display: block;
+    margin-top: 1px;
+}
+
+.container .sidebar .nav_link li.active .sub_menu{
+    margin-top: 1px;
+}
+
+.container .sidebar .nav_link li .sub_menu a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+.container .sidebar .nav_link li .sub_menu a:hover{
+    background: #115171;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.container .sidebar .dark_mode{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* padding: 6px; */
+    transition: all 0.5s ease;
+}
+
+.container .sidebar .dark_mode span, .container .sidebar .dark_mode i{
+    color: #fff;
+    font-size: 16px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.home_section{
+    position: relative;
+    background: #e4e9f7;
+    height: 100vh;
+    left: 220px;
+    width: calc(100% - 220px);
+    padding: 20px 10px 20px 10px;
+    transition: all 0.5s ease;
+}
+
+.home_section .home_content .home_content_top{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.home_section .home_content .home_content_top .bx-menu, .home_section .home_content .home_content_top .text{
+    color: #11101d;
+    font-size: 32px;
+}
+
+.home_section .home_content .home_content_top .bx-menu{
+    margin: 15px;
+    cursor: pointer;
+}
+
+.container .sidebar.close ~ .home_section{
+    left: 78px;
+    width: calc(100% - 78px);
+}

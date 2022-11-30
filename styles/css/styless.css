@@ -161,6 +161,7 @@
     opacity: 1;
     pointer-events: auto;
     transition: all 0.4s ease;
+    display: block;
 }
 
 .sidebar .nav_links li .sub_menu .link_name{
