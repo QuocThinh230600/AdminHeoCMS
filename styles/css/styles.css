@@ -101,12 +101,6 @@
     border-radius: 8px 0 0 8px;
 }
 
-.container .sidebar.close .nav_link .item_link.active{
-    color: #fff;
-    background: none;
-    border-radius: 0;
-}
-
 .container .sidebar .nav_link .item_link.active .link_name, .container .sidebar .nav_link .item_link.active i{
     color: #11101d;
     padding: 4px 0 4px 4px;
